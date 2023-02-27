@@ -98,7 +98,7 @@ class ImagesResize extends Command
     protected function configure()
     {
         $this->setName('magepow:product:resize')
-            ->setDescription('Specific Product Image Resize by Rohan Hapani')
+            ->setDescription('Specific Product Image Resize')
             ->setDefinition($this->getOptionsList());
         $this->addOption(
             'product_id',
