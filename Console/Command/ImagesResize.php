@@ -61,6 +61,11 @@ class ImagesResize extends Command
     private $productImage;
 
     /**
+     * @var Generator
+     */
+    private $batchQueryGenerator;
+
+    /**
      * @var ResourceConnection
      */
     private $resourceConnection;
@@ -71,6 +76,8 @@ class ImagesResize extends Command
      * @param ImageResizeScheduler $imageResizeScheduler
      * @param ProgressBarFactory $progressBarFactory
      * @param ProductImage $productImage
+     * @param Generator $generator
+     * @param ResourceConnection $resourceConnection
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function __construct(
